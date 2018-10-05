@@ -1,4 +1,4 @@
-Name: MSIM
+Name: msim
 Version: 1.3.8.5
 Release: 1%{?dist}
 Summary: Light-weight computer simulator based on MIPS R4000.
