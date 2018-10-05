@@ -5,10 +5,11 @@ Summary: Light-weight computer simulator based on MIPS R4000.
 
 License: GPL
 URL: http://d3s.mff.cuni.cz/~holub/sw/msim/
-
-Source: https://yankee.ms.mff.cuni.cz/msim-1.3.8.5.tar.bz2
+Source: http://d3s.mff.cuni.cz/~holub/sw/msim/msim-1.3.8.5.tar.bz2
 
 Requires: readline
+BuildRequires: imake
+BuildRequires: readline-devel
 
 %description
 Light-weight computer simulator based on MIPS R4000.
@@ -17,18 +18,19 @@ Light-weight computer simulator based on MIPS R4000.
 %global debug_package %{nil}
 
 %prep
-{{{ git_setup_macro }}}
+tar xjf $RPM_SOURCE_DIR/msim-1.3.8.5.tar.bz2
 
 %build
+cd msim-1.3.8.5
 %configure
 %make_build
 
 %install
-%makeinstall_std
+cd msim-1.3.8.5
+rm -rf $RPM_BUILD_ROOT
+make install DESTDIR=$RPM_BUILD_ROOT
 
 %files
-usr/bin/msim
-usr/share/doc/msim-1.3.8.5/reference.html
-usr/share/doc/msim-1.3.8.5/default.css
+/usr/bin/msim
 
 %changelog
