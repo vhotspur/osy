@@ -20,12 +20,11 @@ Light-weight computer simulator based on MIPS R4000.
 {{{ git_setup_macro }}}
 
 %build
-./configure --prefix=/usr
-make
+%configure
+%make_build
 
 %install
-rm -rf $RPM_BUILD_ROOT
-make install DESTDIR=$RPM_BUILD_ROOT
+%makeinstall_std
 
 %files
 usr/bin/msim
