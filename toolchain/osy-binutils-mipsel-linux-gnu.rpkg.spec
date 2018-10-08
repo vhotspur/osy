@@ -5,7 +5,7 @@ Summary: Cross-build binary utilities for mipsel-linux-gnu.
 
 License: GPL
 URL: https://sourceware.org/binutils
-Source: ftp://ftp.gnu.org/gnu/binutils/binutils-2.27.tar.bz2
+Source: https://ftpmirror.gnu.org/binutils/binutils-2.27.tar.bz2
 
 %description
 Light-weight computer simulator based on MIPS R4000.
