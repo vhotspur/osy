@@ -7,8 +7,6 @@ License: GPL
 URL: https://sourceware.org/binutils
 Source: ftp://ftp.gnu.org/gnu/binutils/binutils-2.27.tar.bz2
 
-Requires: 
-
 %description
 Light-weight computer simulator based on MIPS R4000.
 
