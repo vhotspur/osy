@@ -8,7 +8,7 @@ URL: https://sourceware.org/binutils
 Source: https://ftpmirror.gnu.org/binutils/binutils-2.27.tar.bz2
 
 %description
-Light-weight computer simulator based on MIPS R4000.
+Cross-build binary utilities for mipsel-linux-gnu.
 
 
 %global debug_package %{nil}
