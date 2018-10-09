@@ -25,13 +25,18 @@ tar xjf $RPM_SOURCE_DIR/gcc-6.2.0.tar.bz2
 
 %build
 cd gcc-6.2.0
-%configure --target=mipsel-linux-gnu --program-prefix=mipsel-linux-gnu- --disable-nls --disable-werror
-%make_build all
+%configure \
+    --target=mipsel-linux-gnu --program-prefix=mipsel-linux-gnu- \
+    --with-gnu-as --with-gnu-ld --disable-nls --disable-threads \
+    --enable-languages=c,c++ \
+    --disable-multilib --disable-libgcj --without-headers \
+    --disable-shared --enable-lto --disable-werror
+%make_build all-gcc
 
 %install
 cd gcc-6.2.0
 rm -rf $RPM_BUILD_ROOT
-make install DESTDIR=$RPM_BUILD_ROOT
+make install-gcc DESTDIR=$RPM_BUILD_ROOT
 rm -rf $RPM_BUILD_ROOT/usr/share/man
 rm -rf $RPM_BUILD_ROOT/usr/share/info
 find $RPM_BUILD_ROOT
