@@ -7,6 +7,13 @@ License: GPL
 URL: http://gcc.gnu.org
 Source: https://ftpmirror.gnu.org/gcc/gcc-6.2.0/gcc-6.2.0.tar.bz2
 
+Requires: gmp
+Requires: isl
+Requires: libmpc
+BuildRequires: gmp-devel
+BuildRequires: isl-devel
+BuildRequires: libmpc-devel
+
 %description
 Cross-build GCC for mipsel-linux-gnu.
 
