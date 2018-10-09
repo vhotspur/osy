@@ -22,7 +22,7 @@ Cross-build GCC for mipsel-linux-gnu.
 %global debug_package %{nil}
 
 %prep
-tar xzf $RPM_SOURCE_DIR/gcc-6.2.0.tar.gz
+tar xzf $RPM_SOURCE_DIR/gcc-8.2.0.tar.gz
 
 %build
 mkdir build
