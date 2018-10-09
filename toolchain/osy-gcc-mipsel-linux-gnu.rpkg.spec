@@ -27,7 +27,7 @@ tar xzf $RPM_SOURCE_DIR/gcc-8.2.0.tar.gz
 %build
 mkdir build
 cd build
-../gcc-8.2.0/%configure \
+../gcc-8.2.0/configure \
     --target=mipsel-linux-gnu --program-prefix=mipsel-linux-gnu- \
     --with-gnu-as --with-gnu-ld --disable-nls --disable-threads \
     --enable-languages=c,c++ \
