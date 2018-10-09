@@ -5,7 +5,7 @@ Summary: Cross-build GCC for mipsel-linux-gnu.
 
 License: GPL
 URL: http://gcc.gnu.org
-Source: https://ftpmirror.gnu.org/gcc/gcc-8.2.0/gcc-8.2.0.tar.bz2
+Source: https://ftpmirror.gnu.org/gcc/gcc-8.2.0/gcc-8.2.0.tar.gz
 
 Requires: gmp
 Requires: isl
@@ -22,7 +22,7 @@ Cross-build GCC for mipsel-linux-gnu.
 %global debug_package %{nil}
 
 %prep
-tar xjf $RPM_SOURCE_DIR/gcc-6.2.0.tar.bz2
+tar xzf $RPM_SOURCE_DIR/gcc-6.2.0.tar.gz
 
 %build
 mkdir build
