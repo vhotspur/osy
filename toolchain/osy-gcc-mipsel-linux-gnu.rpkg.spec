@@ -41,6 +41,7 @@ rm -rf $RPM_BUILD_ROOT
 make install-gcc DESTDIR=$RPM_BUILD_ROOT
 rm -rf $RPM_BUILD_ROOT/usr/share/man
 rm -rf $RPM_BUILD_ROOT/usr/share/info
+find $RPM_BUILD_ROOT/
 
 %files
 /usr/bin/mipsel-linux-gnu-gcc-nm
