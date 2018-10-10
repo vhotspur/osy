@@ -28,6 +28,7 @@ tar xzf $RPM_SOURCE_DIR/gcc-8.2.0.tar.gz
 mkdir build
 cd build
 ../gcc-8.2.0/configure \
+    --prefix=/usr \
     --target=mipsel-linux-gnu --program-prefix=mipsel-linux-gnu- \
     --with-gnu-as --with-gnu-ld --disable-nls --disable-threads \
     --enable-languages=c,c++ \
@@ -41,6 +42,7 @@ rm -rf $RPM_BUILD_ROOT
 make install-gcc DESTDIR=$RPM_BUILD_ROOT
 rm -rf $RPM_BUILD_ROOT/usr/share/man
 rm -rf $RPM_BUILD_ROOT/usr/share/info
+find $RPM_BUILD_ROOT/
 
 %files
 /usr/bin/mipsel-linux-gnu-gcc-nm
