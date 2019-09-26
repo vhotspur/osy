@@ -5,7 +5,7 @@ Summary: Cross-build binary utilities for mipsel-linux-gnu.
 
 License: GPL
 URL: https://sourceware.org/binutils
-Source: https://ftp.gnu.org/gnu/binutils/binutils-2.30.tar.gz
+Source: https://ftp.gnu.org/gnu/binutils/binutils-2.30.tar.bz2
 
 Requires: gmp
 Requires: isl
