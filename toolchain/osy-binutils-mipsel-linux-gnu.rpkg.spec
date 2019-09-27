@@ -38,10 +38,6 @@ cd binutils-2.30
   --enable-static \
   --with-sysroot \
   --disable-shared 
-        
-
-    make all
-    make install "DESTDIR=$2"
 
 %make_build all
 
