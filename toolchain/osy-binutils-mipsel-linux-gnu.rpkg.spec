@@ -26,7 +26,7 @@ tar xjf $RPM_SOURCE_DIR/binutils-2.30.tar.bz2
 
 %build
 cd binutils-2.30
-%configure \
+./configure \
   --prefix=/opt/mff-nswi004/ \
   --target=mipsel-linux-gnu \
   --program-prefix=mipsel-linux-gnu- \
